@@ -25,5 +25,19 @@ namespace DemoWebAPI.UserService
             return _dBService.Get(id);
         }
 
+        public UserDetail Create(UserDetail userDetail)
+        {
+            return _dBService.Create(userDetail);
+        }
+
+        public UserDetail Update(int id, UserDetail userDetail)
+        {
+            return _dBService.Update(id, userDetail);
+        }
+
+        public void Remove(int id)
+        {
+            _dBService.Remove(id);
+        }
     }
 }
