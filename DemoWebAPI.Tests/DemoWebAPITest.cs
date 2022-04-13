@@ -91,7 +91,7 @@ namespace DemoWebAPI.Tests
                 email = "newunittest@email.com",
                 name = "testfirstname testlastname",
                 username = "testuser99",
-                phone = "18001234",
+                phone = "18001234" + new Random().Next(5000).ToString(),
                 website = "demo.com",
                 address = new Address { city = "testcity", street = "teststreet", suite = "testsuite", zipcode = "4000067", geo = new Geo { lat = "12.33", lng = "15.33" } },
                 company = new Company { name = "testcompany", catchPhrase = "we are a test company", bs = "testabc" }
