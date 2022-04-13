@@ -1,35 +1,35 @@
-﻿using System;
+﻿using MongoDB.Bson.Serialization.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace DemoWebAPI.Domain
 {
+    [BsonIgnoreExtraElements]
     public class UserDetail
     {
-        
-        //[BsonElement("id")]
-        
+        [BsonElement("id")]
         public int userid { get; set; }
 
-        //[BsonElement("name")]
+        [BsonElement("name")]
         public string name { get; set; }
 
-        //[BsonElement("username")]
+        [BsonElement("username")]
         public string username { get; set; }
 
-        //[BsonElement("email")]
+        [BsonElement("email")]
         public string email { get; set; }
 
-        //[BsonElement("address")]
+        [BsonElement("address")]
         public Address address { get; set; }
 
-        //[BsonElement("phone")]
+        [BsonElement("phone")]
         public string phone { get; set; }
 
-        //[BsonElement("website")]
+        [BsonElement("website")]
         public string website { get; set; }
 
-        //[BsonElement("company")]
+        [BsonElement("company")]
         public Company company { get; set; }
     }
 }
