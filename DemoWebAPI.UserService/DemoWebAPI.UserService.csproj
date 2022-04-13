@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DemoWebAPI.DBService\DemoWebAPI.DBService.csproj" />
+  </ItemGroup>
+
 </Project>
